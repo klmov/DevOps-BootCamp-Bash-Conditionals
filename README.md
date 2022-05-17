@@ -1,4 +1,4 @@
-# DevOps-BootCamp-Bash-Conditionals
+# DevOps BootCamp: Bash Conditionals
 
 ## Task 1
 An unsorted list is passed to the script. Write a program that will output the sum of even numbers
