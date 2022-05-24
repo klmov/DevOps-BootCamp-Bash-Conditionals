@@ -33,3 +33,21 @@ If the result is a fractional number, rounding should be done to tenths:
 `./temp.sh 98F`
 
 36,7C
+
+
+## Task 3
+Develop script that takes any string and calculate count of letters, numbers, symbols `!@#$%^&()_+` inside except whitespaces
+
+### Check
+
+`./check_ctring.sh 'Hello !! ** 564gfhf'`
+
+Numbers: 4 Symbols: 7 Letters: 0
+
+`./check_string.sh 'Hello !!   +'`
+
+Numbers: 0 Symbols: 3 Letters: 5
+
+`./check_string.sh 'Hello !!+'`
+
+Numbers: 0 Symbols: 3 Letters: 5
