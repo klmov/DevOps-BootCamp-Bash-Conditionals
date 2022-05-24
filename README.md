@@ -17,23 +17,22 @@ An unsorted list is passed to the script. Write a program that will output the s
 12
 
 ## Task 2
-Develop a script that takes the temperature value in Celsius OR Fahrenheit and returns the inverse value
+Develop a script that takes the temperature value in Celsius OR Kelvins and returns the inverse value.
+The formula is pretty simple: `C = K - 273`; `K = C + 273`
 
 ### Check
-If the result is a fractional number, rounding should be done to tenths:
 
 `./temp.sh 55C`
 
-131F
+328K
 
-`./temp.sh 122F`
+`./temp.sh 122K`
 
-50C
+-151C
 
-`./temp.sh 98F`
+`./temp.sh 98C`
 
-36,7C
-
+371K
 
 ## Task 3
 Develop script that takes any string and calculate count of letters, numbers, symbols `!@#$%^&()_+` inside except whitespaces
