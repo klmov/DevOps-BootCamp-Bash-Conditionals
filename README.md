@@ -36,13 +36,13 @@ The formula is pretty simple: `C = K - 273`; `K = C + 273`
 
 
 ## Task 3
-Develop script that takes any string and calculate count of letters, numbers, symbols `!@#$%^&()_+` inside except whitespaces
+Develop script that takes any string and calculate count of letters, numbers, symbols `*!@#$%^&()_+` inside except whitespaces
 
 ### Check
 
-`./check_ctring.sh 'Hello !! ** 564gfhf'`
+`./check_string.sh 'Hello !! ** 564gfhf'`
 
-Numbers: 4 Symbols: 7 Letters: 0
+Numbers: 3 Symbols: 4 Letters: 9
 
 `./check_string.sh 'Hello !!   +'`
 
