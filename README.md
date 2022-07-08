@@ -16,6 +16,10 @@ An unsorted list is passed to the script. Write a program that will output the s
 
 12
 
+`./cond1.sh ""`
+
+0
+
 ## Task 2
 Develop a script that takes the temperature value in Celsius OR Kelvins and returns the inverse value.
 The formula is pretty simple: `C = K - 273`; `K = C + 273`
