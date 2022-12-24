@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Code for counting numbers/letters/symbols in a user input (string)
-
 string=$1
 
 countLetters=0
@@ -12,8 +10,6 @@ letter="[a-zA-Z]"
 number="[0-9]"
 symbols="+_!@#{}*-=~?/\|$%^&()"
 
-# Letters count
-
 for (( i=0; i<${#string}; i++ ))
 do
     count=${string:$i:1}
@@ -23,8 +19,6 @@ do
     fi
 done
 
-# code for Numbers Count
-
 for (( i=0; i<${#string}; i++ ))
 do
     count=${string:$i:1}
@@ -33,8 +27,6 @@ do
         countNumbers=$(($countNumbers+1))
     fi
 done
-
-# code for symbol count
 
 for (( i=0; i<${#string}; i++ ))
 do
