@@ -1,24 +1,50 @@
 #!/bin/bash
 
-# Script for counting Words, numbers and symbols in a string
+# Code for counting numbers/letters/symbols in a user input (string)
 
-string=$@
+string=$1
 
-# Word count
+countLetters=0
+countNumbers=0
+countSymbols=0
 
-words=$(echo -n "$string" | tr -cd '[:alpha:]' | wc -c)
+letter="[a-zA-Z]"
+number="[0-9]"
+symbols="+_!@#{}*-=~?/\|$%^&()"
 
-# numbers count
+# Letters count
 
-numbers=$(echo -n "$string" | tr -cd '[:digit:]' | wc -c)
+for (( i=0; i<${#string}; i++ ))
+do
+    count=${string:$i:1}
+    if [[ $count =~ $letter ]]
+    then
+        countLetters=$(($countLetters+1))
+    fi
+done
 
-# symbols count
+# code for Numbers Count
 
-symbols=$(echo -n "$string" | tr -cd '[:punct:]' | wc -c)
+for (( i=0; i<${#string}; i++ ))
+do
+    count=${string:$i:1}
+    if [[ $count =~ $number ]]
+    then
+        countNumbers=$(($countNumbers+1))
+    fi
+done
 
-# output
+# code for symbol count
 
-echo -n "Letters: $words,"
-echo -n "Numbers: $numbers,"
-echo "Symbols: $symbols."
+for (( i=0; i<${#string}; i++ ))
+do
+    count=${string:$i:1}
+    if [[ $symbols == *"$count"* ]]
+    then
+        countSymbols=$(($countSymbols+1))
+    fi
+done
+
+echo "Number: $countNumbers" "Symbols: $countSymbols" " Letters: $countLetters"
+
 
