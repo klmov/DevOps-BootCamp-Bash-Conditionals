@@ -1,7 +1,6 @@
 #!/bin/bash
 
 IFS=',' read -r -a array <<< "$1"
-
 declare -i sum=0
 for digit in "${nums[@]}"; do
 
