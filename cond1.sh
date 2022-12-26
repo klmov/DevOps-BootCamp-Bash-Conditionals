@@ -1,11 +1,12 @@
 #!/bin/bash
 
-IFS=',' read -r -a array <<< "$1"
+IFS=',' read -r -a nums <<< "$1"
 declare -i sum=0
-for digit in "${nums[@]}"; do
+for val in "${nums[@]}"; do
 
-  if (( digit%2==0 )); then
-    ((sum+=digit)) 
+  if (( val%2==0 )); then
+    ((sum+=val))
   fi
 done
 echo "$sum"
+
