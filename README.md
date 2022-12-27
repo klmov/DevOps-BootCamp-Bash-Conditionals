@@ -44,14 +44,14 @@ Develop script that takes any string and calculate count of letters, numbers, sy
 
 ### Check
 
-`./check_string.sh 'Hello !! ** 564gfhf'`
+`./check_string.sh "Hello !! ** 564gfhf"`
 
 Numbers: 3 Symbols: 4 Letters: 9
 
-`./check_string.sh 'Hello !!   +'`
+`./check_string.sh "Hello !!   +"`
 
 Numbers: 0 Symbols: 3 Letters: 5
 
-`./check_string.sh 'Hello !!+'`
+`./check_string.sh "Hello !!+"`
 
 Numbers: 0 Symbols: 3 Letters: 5
